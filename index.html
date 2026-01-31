@@ -20,6 +20,8 @@
             color: white;
             font-family: 'Plus Jakarta Sans', sans-serif;
             -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+          width:100%;
         }
 
         .application-global-viewport-wrapper {
@@ -27,7 +29,10 @@
             max-width: 600px;
             margin: 0 auto;
         }
-
+.application-global-viewport-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
         /* --- DASHBOARD WIDGETS --- */
         .dashboard-header-section {
             margin-bottom: 30px;
@@ -90,6 +95,7 @@
       color: #f4f4f4;
       font-family: 'Segoe UI', sans-serif;
       padding: 2rem;
+       margin-left: -12px;
     }
 
     h1 {
@@ -114,14 +120,17 @@
 
     .card {
       background: #1c1c1c;
-      border-radius: 14px;
-      padding: 1rem 1.2rem;
-      margin: 1rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-left: 4px solid #fff;
-      transition: 0.3s;
+border-radius: 14px;
+padding: 1rem 1.2rem;
+margin: 1rem 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-left: 4px solid #fff;
+transition: 0.3s;
+
+width: 100%;        /* 🔥 Yoniga cho'ziladi */
+box-sizing: border-box;
     }
 
     .card:hover {
@@ -181,6 +190,9 @@
       .card {
         flex-direction: column;
         align-items: flex-start;
+        width:329px;
+       
+        
       }
       .right {
         text-align: left;
@@ -204,7 +216,7 @@ Shanba, 31-yanvar</div>
             <div class="mini-status-card">
                 <i class="fa-solid fa-money-bill-transfer mini-card-icon"></i>
                 <span class="mini-card-label">USD Kursi</span>
-                <span class="mini-card-value">$12,168.98</span>
+                <span class="mini-card-value">$12,199.10</span>
             </div>
             <div class="mini-status-card">
                 <i class="fa-solid fa-quote-left mini-card-icon"></i>
